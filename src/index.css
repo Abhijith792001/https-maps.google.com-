@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-google-blue: #1a73e8;
+  --color-google-green: #1e8e3e;
+  --color-google-red: #d93025;
+  --color-google-yellow: #f9ab00;
+  --color-google-text: #202124;
+  --color-google-secondary: #70757a;
+  --color-google-bg: #f8f9fa;
+  --shadow-google: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+  --shadow-google-hover: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', 'Google Sans', Arial, sans-serif;
+    color: var(--color-google-text);
+  }
+}
+
+.google-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow-google);
+}
+
+.google-card:hover {
+  box-shadow: var(--shadow-google-hover);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 4px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}

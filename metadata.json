@@ -1,0 +1,7 @@
+{
+  "name": "GeoExplorer",
+  "description": "A high-fidelity Google Maps clone featuring interactive maps, search, directions, and place details using Leaflet and OpenStreetMap.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
